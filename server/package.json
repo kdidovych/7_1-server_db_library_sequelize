@@ -1,0 +1,25 @@
+{
+  "name": "7_1-server_db_library_sequelize",
+  "version": "1.0.0",
+  "description": "Sequelize CLI",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "db-create": "npx sequelize db:create",
+    "db-migrate": "npx sequelize-cli db:migrate",
+    "db-undo-migrate": "npx sequelize-cli db:migrate:undo",
+    "check-tables": "node src/cli/check.js",
+    "recreate-table": "node src/cli/recreate-table.js"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.7",
+    "pg": "^8.23.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.8",
+    "sequelize-auto": "^0.8.8",
+    "sequelize-cli": "^6.6.5"
+  }
+}
